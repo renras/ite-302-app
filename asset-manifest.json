@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ite-302-app/static/css/main.8672f4ae.chunk.css",
-    "main.js": "/ite-302-app/static/js/main.38186e3a.chunk.js",
-    "main.js.map": "/ite-302-app/static/js/main.38186e3a.chunk.js.map",
+    "main.css": "/ite-302-app/static/css/main.9813b1cb.chunk.css",
+    "main.js": "/ite-302-app/static/js/main.8c3f326b.chunk.js",
+    "main.js.map": "/ite-302-app/static/js/main.8c3f326b.chunk.js.map",
     "runtime-main.js": "/ite-302-app/static/js/runtime-main.3a52b15b.js",
     "runtime-main.js.map": "/ite-302-app/static/js/runtime-main.3a52b15b.js.map",
-    "static/js/2.8a797d46.chunk.js": "/ite-302-app/static/js/2.8a797d46.chunk.js",
-    "static/js/2.8a797d46.chunk.js.map": "/ite-302-app/static/js/2.8a797d46.chunk.js.map",
+    "static/js/2.8dca1c84.chunk.js": "/ite-302-app/static/js/2.8dca1c84.chunk.js",
+    "static/js/2.8dca1c84.chunk.js.map": "/ite-302-app/static/js/2.8dca1c84.chunk.js.map",
     "index.html": "/ite-302-app/index.html",
-    "static/css/main.8672f4ae.chunk.css.map": "/ite-302-app/static/css/main.8672f4ae.chunk.css.map",
-    "static/js/2.8a797d46.chunk.js.LICENSE.txt": "/ite-302-app/static/js/2.8a797d46.chunk.js.LICENSE.txt",
+    "static/css/main.9813b1cb.chunk.css.map": "/ite-302-app/static/css/main.9813b1cb.chunk.css.map",
+    "static/js/2.8dca1c84.chunk.js.LICENSE.txt": "/ite-302-app/static/js/2.8dca1c84.chunk.js.LICENSE.txt",
     "static/media/icon-cart-light.7e9c04e5.svg": "/ite-302-app/static/media/icon-cart-light.7e9c04e5.svg",
     "static/media/icon-cart.350712f0.svg": "/ite-302-app/static/media/icon-cart.350712f0.svg",
     "static/media/icon-close-light.15d6ae32.svg": "/ite-302-app/static/media/icon-close-light.15d6ae32.svg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3a52b15b.js",
-    "static/js/2.8a797d46.chunk.js",
-    "static/css/main.8672f4ae.chunk.css",
-    "static/js/main.38186e3a.chunk.js"
+    "static/js/2.8dca1c84.chunk.js",
+    "static/css/main.9813b1cb.chunk.css",
+    "static/js/main.8c3f326b.chunk.js"
   ]
 }
