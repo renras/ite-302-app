@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/ite-302-app/static/css/main.8672f4ae.chunk.css",
+    "main.js": "/ite-302-app/static/js/main.38186e3a.chunk.js",
+    "main.js.map": "/ite-302-app/static/js/main.38186e3a.chunk.js.map",
+    "runtime-main.js": "/ite-302-app/static/js/runtime-main.3a52b15b.js",
+    "runtime-main.js.map": "/ite-302-app/static/js/runtime-main.3a52b15b.js.map",
+    "static/js/2.8a797d46.chunk.js": "/ite-302-app/static/js/2.8a797d46.chunk.js",
+    "static/js/2.8a797d46.chunk.js.map": "/ite-302-app/static/js/2.8a797d46.chunk.js.map",
+    "index.html": "/ite-302-app/index.html",
+    "static/css/main.8672f4ae.chunk.css.map": "/ite-302-app/static/css/main.8672f4ae.chunk.css.map",
+    "static/js/2.8a797d46.chunk.js.LICENSE.txt": "/ite-302-app/static/js/2.8a797d46.chunk.js.LICENSE.txt",
+    "static/media/icon-cart-light.7e9c04e5.svg": "/ite-302-app/static/media/icon-cart-light.7e9c04e5.svg",
+    "static/media/icon-cart.350712f0.svg": "/ite-302-app/static/media/icon-cart.350712f0.svg",
+    "static/media/icon-close-light.15d6ae32.svg": "/ite-302-app/static/media/icon-close-light.15d6ae32.svg",
+    "static/media/icon-close.1901f487.svg": "/ite-302-app/static/media/icon-close.1901f487.svg",
+    "static/media/icon-delete.1fd1f1f7.svg": "/ite-302-app/static/media/icon-delete.1fd1f1f7.svg",
+    "static/media/icon-menu.c6107d03.svg": "/ite-302-app/static/media/icon-menu.c6107d03.svg",
+    "static/media/icon-minus.f5073aa8.svg": "/ite-302-app/static/media/icon-minus.f5073aa8.svg",
+    "static/media/icon-plus.b297868c.svg": "/ite-302-app/static/media/icon-plus.b297868c.svg",
+    "static/media/icon-previous.80616402.svg": "/ite-302-app/static/media/icon-previous.80616402.svg",
+    "static/media/image-product-1.520cc50b.jpg": "/ite-302-app/static/media/image-product-1.520cc50b.jpg",
+    "static/media/image-product-2.c8bb0aac.jpg": "/ite-302-app/static/media/image-product-2.c8bb0aac.jpg",
+    "static/media/image-product-3.af5c71ba.jpg": "/ite-302-app/static/media/image-product-3.af5c71ba.jpg",
+    "static/media/image-product-4.9962862e.jpg": "/ite-302-app/static/media/image-product-4.9962862e.jpg",
+    "static/media/logo.4fe9c1e8.svg": "/ite-302-app/static/media/logo.4fe9c1e8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a52b15b.js",
+    "static/js/2.8a797d46.chunk.js",
+    "static/css/main.8672f4ae.chunk.css",
+    "static/js/main.38186e3a.chunk.js"
+  ]
+}
