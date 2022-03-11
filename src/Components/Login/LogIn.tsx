@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appActions } from "../../store/appSlice";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import CloseButton from "../CloseButton/CloseButton";
 import Button from "../Button/Button";
@@ -13,10 +14,12 @@ type FormData = {
 };
 
 const LogIn = () => {
+  const googleCaptchaApiKey = "6LfC9M8eAAAAANqT2fht2KIrRBrBn4vELt0IrXyu";
   const { register, handleSubmit } = useForm<FormData>();
   const dispatch = useAppDispatch();
   const users = useAppSelector((state) => state.app.users);
   const isRegistering = useAppSelector((state) => state.app.isRegistering);
+  const isHuman = useAppSelector((state) => state.app.isHuman);
 
   const closeLoginForm = () => {
     dispatch(appActions.toggleLoginForm());
@@ -49,7 +52,7 @@ const LogIn = () => {
       }
     }
 
-    if (isRegistering) {
+    if (isRegistering && isHuman) {
       const username = data.username;
       const password = data.password;
       const password2 = data.password2;
@@ -63,7 +66,6 @@ const LogIn = () => {
               password: password,
             })
           );
-          console.log(username, password);
           dispatch(appActions.toggleIsRegistering());
         }
       }
@@ -71,8 +73,12 @@ const LogIn = () => {
   });
 
   const toggleIsRegistering = () => {
+    dispatch(appActions.toggleIsHuman(false));
     dispatch(appActions.toggleIsRegistering());
-    console.log("isregistering");
+  };
+
+  const captchaChangeHandler = () => {
+    dispatch(appActions.toggleIsHuman(true));
   };
 
   return ReactDOM.createPortal(
@@ -117,7 +123,13 @@ const LogIn = () => {
             </div>
           )}
           {isRegistering && (
-            <Button className="px-2 py-1 mt-8">Register</Button>
+            <div className="flex flex-col mt-8 gap-4 justify-center items-center">
+              <ReCAPTCHA
+                sitekey={googleCaptchaApiKey}
+                onChange={captchaChangeHandler}
+              />
+              <Button className="px-2 py-1 mt-4">Register</Button>
+            </div>
           )}
         </form>
       </div>

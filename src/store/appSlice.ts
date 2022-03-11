@@ -43,6 +43,7 @@ interface InitialState {
   users: User[];
   loggedInUser: User | null;
   isRegistering: boolean;
+  isHuman: boolean;
 }
 
 const initialState: InitialState = {
@@ -64,6 +65,7 @@ const initialState: InitialState = {
   loggedInUser: null,
   showLoginForm: false,
   isRegistering: false,
+  isHuman: false,
 };
 
 const appSlice = createSlice({
@@ -151,6 +153,12 @@ const appSlice = createSlice({
     },
     registerUser(state, action: PayloadAction<User>) {
       state.users.push(action.payload);
+    },
+    toggleIsHuman(state, action: PayloadAction<boolean>) {
+      state.isHuman = action.payload;
+    },
+    logout(state) {
+      state.loggedInUser = null;
     },
   },
 });

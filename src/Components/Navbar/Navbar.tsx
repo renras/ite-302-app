@@ -28,6 +28,10 @@ const Navbar = () => {
     dispatch(appActions.toggleLoginForm());
   };
 
+  const logout = () => {
+    dispatch(appActions.logout());
+  };
+
   return (
     <header className="flex items-center p-6 relative  max-w-screen-2xl lg:w-9/12 lg:border-b-2 lg:border-light-grayish-blue lg:m-auto lg:py-0 lg:h-28">
       <Menu clickHandler={openNavDrawer} />
@@ -48,7 +52,12 @@ const Navbar = () => {
             Login
           </Button>
         ) : (
-          <p>{loggedInUser.username}</p>
+          <div className="flex items-center gap-4">
+            <p>{loggedInUser.username}</p>
+            <Button className="py-1 px-2" clickHandler={logout}>
+              Logout
+            </Button>
+          </div>
         )}
       </div>
     </header>
