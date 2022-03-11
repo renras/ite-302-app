@@ -20,7 +20,7 @@ const Cart = () => {
             <p>Your cart is empty.</p>
           </div>
         )}
-        {cart.length > 0 && <Button text="Checkout" />}
+        {cart.length > 0 && <Button>Checkout</Button>}
       </div>
     </div>
   );

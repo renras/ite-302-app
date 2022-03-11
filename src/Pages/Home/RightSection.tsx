@@ -68,11 +68,11 @@ const RightSection = () => {
         decrementHandler={decrement}
       />
       <Button
-        className="gap-4 mt-2 flex justify-center items-center col-start-1 col-span-2 lg:col-start-2 lg:col-span-2 lg:mt-0"
-        text="Add to cart"
+        className="gap-4 mt-2 flex justify-center items-center col-start-1 col-span-2 lg:col-start-2 lg:col-span-2 lg:mt-0 py-4"
         clickHandler={addToCart}
       >
         <img className="fill-white w-4 lg:w-3" src={lightCart} alt="cartIcon" />
+        Add to cart
       </Button>
     </section>
   );

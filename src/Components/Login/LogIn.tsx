@@ -1,9 +1,10 @@
 import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
-
-import CloseButton from "../CloseButton/CloseButton";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { appActions } from "../../store/appSlice";
+
+import CloseButton from "../CloseButton/CloseButton";
+import Button from "../Button/Button";
 
 type FormData = {
   username: string;
@@ -62,12 +63,7 @@ const LogIn = () => {
             placeholder="password"
             {...register("password")}
           />
-          <button
-            className="border-2 border-black py-0.5 px-2 rounded mt-8"
-            type="submit"
-          >
-            Log In
-          </button>
+          <Button className="px-2 py-1 mt-8">Login</Button>
         </form>
       </div>
     </div>,

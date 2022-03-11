@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import logo from "../../images/logo.svg";
 import Menu from "../Menu/Menu";
 import CartContent from "../CartContent/CartContent";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
@@ -43,7 +44,9 @@ const Navbar = () => {
           {showCartContent && <CartContent />}
         </div>
         {!loggedInUser ? (
-          <button onClick={showLoginForm}>Log In</button>
+          <Button clickHandler={showLoginForm} className="py-1 px-2">
+            Login
+          </Button>
         ) : (
           <p>{loggedInUser.username}</p>
         )}
