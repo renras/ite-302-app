@@ -3,6 +3,7 @@
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
+  "main": "craco.config.js",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@reduxjs/toolkit": "^1.6.2",
